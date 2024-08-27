@@ -1,0 +1,27 @@
+.container-populares{
+    margin-top: 10rem;
+    height: 150vh;
+    background-color: #2A2A2A;
+    width: 20rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: inset -20px 20px 40px 8px black;
+}
+
+.container-populares h1{
+    font-weight: 700;
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #e0e0e0;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.align-cardPol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    justify-content: space-around;
+}
