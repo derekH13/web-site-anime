@@ -9,6 +9,18 @@
     height: 120vh;
 }
 
+.coluna-conteudo{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+
+
+
+
+
+
 
 /* ================ animation ========== */
 
@@ -19,4 +31,26 @@
     to {
         transform: rotate(360deg); /* Posição final */
     }
+}
+
+
+
+/*  responsividade */
+@media (max-width: 1200px) {
+
+
+
+    .container-populares{
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+
+    .descktop{
+        display: none;
+    }
+
 }

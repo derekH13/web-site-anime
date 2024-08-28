@@ -1,27 +1,52 @@
-.container-populares{
-    margin-top: 10rem;
-    height: 150vh;
-    background-color: #2A2A2A;
-    width: 20rem;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    box-shadow: inset -20px 20px 40px 8px black;
+.container-carousel{
+    margin-left: 25rem;
+    padding-top: 10rem;
+    width: 70%;
+    
 }
 
-.container-populares h1{
-    font-weight: 700;
-    margin-right: 2rem;
-    font-size: 2rem;
-    color: #e0e0e0;
-    text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 3rem;
-}
 
-.align-cardPol{
+.carousel-cardHorizontal{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 90%;
     justify-content: space-around;
+   
+}
+
+
+.abc{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.title-carousel{
+    color: #2A2A2A;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+
+
+
+
+@media (max-width: 1500px) {
+    .container-carousel{
+        margin-left: 23rem;
+        width: 68%;
+        
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    
+    .container-carousel{
+        margin: 0 auto;
+        padding-top: 10rem;
+        width: 90%;
+        
+    }
 }

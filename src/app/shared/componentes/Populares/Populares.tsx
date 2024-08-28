@@ -14,12 +14,10 @@ function Populares() {
 
     useEffect(() => {
         Util.requisicaoTop('anime', 3).then((data) => {
-            console.log(data);
             setDadosTop(data);
         });
     }, []);
 
-    console.log(dadosTop);
 
     return (
         <div className='container-populares'>

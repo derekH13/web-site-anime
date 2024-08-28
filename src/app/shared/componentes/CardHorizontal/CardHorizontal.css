@@ -1,0 +1,15 @@
+.cardHorizontal{
+    background-color: rgb(255, 255, 255);
+    height: 13rem;
+    width: 23rem;
+    margin-top: 1px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 10px rgba(119, 119, 119, 0.322);
+}
+
+.cardHorizontal img{
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    height: 100%;
+    width: 12rem;
+}

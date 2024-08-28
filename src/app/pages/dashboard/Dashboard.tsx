@@ -3,6 +3,8 @@ import Provider from '../../shared/contexts/Provider'
 import { Util } from '../../Util/Util'
 import { motion } from 'framer-motion'
 
+
+import '../../style.css'
 import './Dashboard.css'
 
 
@@ -18,10 +20,6 @@ import Populares from '../../shared/componentes/Populares/Populares'
 //aqui é uma pagina
 export const Dashboard = () => {
 
-Util.requisicao()
-
-console.log('dghdg');
-
 
 
     return(
@@ -31,14 +29,22 @@ console.log('dghdg');
                 <Ladding />
 
                 <section className='conteudo-japao'>
-                <Populares />
+                    <Populares />
 
+                <div className="coluna-conteudo">
+                    <GenerosCarousel genero={'Action'} />
+                    <GenerosCarousel genero={'Drama'} />
+                    <GenerosCarousel genero={'Action'} />
+
+
+                </div>
+                   
                 </section>
 
                 
                 
 
-                <GenerosCarousel />
+                
 
             </div>
         </Provider> 

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate} from "react-router-dom"
 import { Dashboard } from "../pages";
 
-
+import '../../app/style.css'
 //config do react route dom padrão
 
 export const Routes = () => {
