@@ -19,7 +19,7 @@ function Ladding(){
                 <img className="japao-text" src="/assets/japao/JAPÃO.png" alt="" />
 
                 <div className="container-texto">
-                <p>Mergulhe no universo vibrante da cultura japonesa e descubra uma vasta coleção de séries e animações que cativam e inspiram! Venha explorar o mundo dos animes e mangas, onde histórias envolventes e visuais deslumbrantes se encontram para criar uma experiência única e inesquecível.</p>
+                <p>Mergulhe no universo vibrante da cultura japonesa e descubra uma vasta coleção de séries e animações que cativam e inspiram! <span className="descktop"> Venha explorar o mundo dos animes e mangas, onde histórias envolventes e visuais deslumbrantes se encontram para criar uma experiência única e inesquecível.</span> </p>
                 </div>
                         
                 <div className="btn-play">

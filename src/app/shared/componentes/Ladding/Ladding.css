@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 
 .ladding-conteudo .japao-text{
@@ -110,3 +111,84 @@ animation: girar 8s linear infinite;
 }
 
 
+
+
+@media (max-width:1200px) {
+    .garota-japao img{
+        height: 65%;
+        width: 70%;
+        position: absolute;
+        right: -4rem;
+        bottom: 0px;
+       }
+
+       .ladding-conteudo .japao-text{
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 3rem;
+    }
+
+    .btn-play .circulo{
+        background-color: white;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circulo img{
+        height: 5rem;
+        width: 4rem;
+        margin-left: 1rem;
+        
+    }
+
+    .btn-play{
+        margin-top: 10rem;
+        margin-left: 2rem;
+        width: 35%;
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* =========================== controla o tamanho do btn */
+    }
+
+    
+.btn-play .girar img{
+    max-width: 19rem;
+    width: 91%;
+    position: absolute;
+    animation: girar 8s linear infinite;
+    /* ============================== efeito de girar ============= */
+    }
+
+    .ladding-conteudo .container-texto{
+        margin: 2rem 0;
+        width: 100%;
+        text-align: center;
+        background-color: #65131400;
+        height: max-content;
+        font-family: "Inter", sans-serif;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: inset -5px -5px 20px 0px #ff777700;
+        padding: 0 15px;
+    } 
+
+    .vector-baixo{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        transform: rotate(180deg);
+        height: 8rem;
+    }
+
+    
+.ladding-conteudo{
+margin-bottom: 5rem;
+}
+
+}

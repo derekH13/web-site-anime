@@ -1,0 +1,32 @@
+.container-footer{
+    height: 75vh;
+    background-color: #141414;
+    overflow-y: hidden;
+}
+
+.container-footer img{
+    transform: rotate(180deg);
+}
+
+.container-footer h1{
+    color:  white;
+    width: 95%;
+    margin: 0 auto;
+   
+}
+
+
+@media (max-width: 1200px) {
+    .alinhar-sociais{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .alinhar-sociais button{
+        margin-top: 1rem;
+    }
+}

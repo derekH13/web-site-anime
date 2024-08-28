@@ -13,6 +13,8 @@ import './Dashboard.css'
 import Ladding from '../../shared/componentes/Ladding/Ladding'
 import GenerosCarousel from '../../shared/componentes/GenerosCarousel/GenerosCarousel'
 import Populares from '../../shared/componentes/Populares/Populares'
+import Navegation from '../../shared/componentes/Navegation/Navegation'
+import Footer from '../../shared/componentes/Footer/Footer'
 
 
 
@@ -26,7 +28,10 @@ export const Dashboard = () => {
         <Provider>
             <div className='home'>
 
+                
+            <Navegation />
                 <Ladding />
+                
 
                 <section className='conteudo-japao'>
                     <Populares />
@@ -39,14 +44,16 @@ export const Dashboard = () => {
 
                 </div>
                    
+                <Footer />
                 </section>
 
                 
                 
-
+            
                 
 
             </div>
+            
         </Provider> 
     )
 

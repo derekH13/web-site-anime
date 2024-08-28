@@ -1,6 +1,6 @@
 .container-carousel{
     margin-left: 25rem;
-    padding-top: 10rem;
+    padding-top: 5.8rem;
     width: 70%;
     
 }
@@ -20,12 +20,19 @@
 }
 
 .title-carousel{
-    color: #2A2A2A;
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 25px;
     font-weight: 700;
     padding-left: 2rem;
+    background-image: linear-gradient(to right bottom, #c90d0d, #ad3030, #501616, #000000);
+    box-shadow: inset 10px 10px 20px 0px rgb(85, 5, 5);
+    border-radius: 30px;
 }
 
+.btn-passar{
+    margin-top: 10rem;
+    background-color: #50141c93;
+}
 
 
 
@@ -45,8 +52,13 @@
     
     .container-carousel{
         margin: 0 auto;
-        padding-top: 10rem;
+        padding-top: 0rem;
         width: 90%;
         
+    }
+
+    .btn-passar{
+        margin-top: -4rem;
+        background-color: #50141c93;
     }
 }

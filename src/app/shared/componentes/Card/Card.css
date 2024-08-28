@@ -6,12 +6,12 @@
     height: 21rem;
     max-height: 21rem;
     text-align: center;
-    background-color: #2A2A2A;
+    background-color: #eeeeee;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 30px 10px rgba(119, 119, 119, 0.425);
     margin-top: 1.5rem;
+    overflow-y: hidden;
 }
 
 .card img{
@@ -23,7 +23,7 @@
 
 .card a h1{
     font-size: 1.1rem;
-    color: #fdfdfd;
+    color: #202020;
     padding: 0.5rem .5rem;
     margin: 0 auto;
 }
@@ -37,10 +37,12 @@
     .card{
         width: 9.5rem;
         max-height: 14rem;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.253);
          
     }
 
     .card img{
         height: 10rem;
     }
+
 }
