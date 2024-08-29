@@ -1,0 +1,71 @@
+/* From Uiverse.io by faxriddin20 */ 
+.button-container {
+    display: flex;
+    background-color: black;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+  .alinhar-navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .conatiner-navBar{
+    position: fixed;
+    right: 10px;
+    top: 38%;
+    z-index: 9999;
+    flex-direction: column;
+    width: 50px;
+    height: 250px;
+    box-shadow: 0px 0px 30px 20px rgba(85, 85, 85, 0.212);
+  }
+
+
+
+  @media (max-width: 1200px) {
+
+        .conatiner-navBar{
+            position: fixed;
+            right: auto;
+            top: auto;
+            z-index: 9999;
+            flex-direction: row;
+            height: 50px;
+            border-radius: 50px;
+            bottom: 10px;
+            width: 90%;
+            box-shadow: 0px 0px 30px 20px rgba(172, 172, 172, 0.212);
+            padding: 0px 20px;
+          }
+        
+      
+  }

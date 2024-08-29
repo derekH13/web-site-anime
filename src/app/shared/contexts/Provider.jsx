@@ -8,25 +8,13 @@ import PropTypes from 'prop-types';  // Corrected 'propTypes' to 'PropTypes'
 // This function wraps all child components that we want to have in a context
 function Provider({children}) {
 
-    const [PokeDados, setPokeDados] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [TipoPokemon, setTipoPokemon] = useState([]);
-    const [arrayTipo, setArrayTipo] = useState([]);
-    const [CardMostrar, setCardMostrar] = useState('');
+    const [dadosUsuario, setdadosUsuario] = useState({})
 
 
     // These variables are passed to the Context
     const value = {
-        PokeDados, 
-        setPokeDados,
-        loading,
-        setLoading,
-        TipoPokemon, 
-        setTipoPokemon,
-        arrayTipo, 
-        setArrayTipo,
-        CardMostrar, 
-        setCardMostrar,
+        dadosUsuario,
+        setdadosUsuario
     };
 
     return ( 

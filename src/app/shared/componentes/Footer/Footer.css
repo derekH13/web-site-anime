@@ -33,6 +33,7 @@
         height: 100%;
         margin: 0 auto;
         padding-top: 10%;
+        transform: translateY(-6rem);
     }
 
     .alinhar-sociais button{

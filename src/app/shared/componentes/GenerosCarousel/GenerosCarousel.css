@@ -1,15 +1,22 @@
 .container-carousel{
     margin-left: 25rem;
-    padding-top: 5.8rem;
+    margin-top: 5.8rem;
     width: 70%;
     
 }
 
 
+
 .carousel-cardHorizontal{
     display: flex;
     justify-content: space-around;
-   
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+span{
+    width: 100%;
+    min-width: 10rem;
 }
 
 
@@ -31,7 +38,7 @@
 
 .btn-passar{
     margin-top: 10rem;
-    background-color: #50141c93;
+    background-color: #00000093;
 }
 
 
@@ -59,6 +66,6 @@
 
     .btn-passar{
         margin-top: -4rem;
-        background-color: #50141c93;
+        background-color: #00000093;
     }
 }

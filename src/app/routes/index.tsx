@@ -1,25 +1,30 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate} from "react-router-dom"
-import { Dashboard, Dorama } from "../pages";
+import { Cadastro, Dashboard, Dorama } from "../pages";
 
 import '../../app/style.css'
+import 'flowbite/dist/flowbite.css';
+import Provider from "../shared/contexts/Provider";
 //config do react route dom padrão
 
 export const Routes = () => {
 
     return (
-        <BrowserRouter>
-         <Switch>
+        <Provider>
+            <BrowserRouter>
+            <Switch>
 
-            {/* quando o navegador for pra rota '/pagina-inicial' vai para a pagina "Dashboard"  */}
-            <Route path="/pagina-inicial" element={<Dashboard />} />
-            <Route path="/pagina-Dorama" element={<Dorama />} />  
+                {/* quando o navegador for pra rota '/pagina-inicial' vai para a pagina "Dashboard"  */}
+                <Route path="/pagina-inicial" element={<Dashboard />} />
+                <Route path="/pagina-Dorama" element={<Dorama />} />  
+                <Route path="/pagina-Cadastro" element={<Cadastro />} />  
 
 
 
-           {/* se a url não se encaixar com nenhuma a cima */}
-           <Route path="*" element={<Navigate to="pagina-inicial" />}/>
+            {/* se a url não se encaixar com nenhuma a cima */}
+            <Route path="*" element={<Navigate to="pagina-inicial" />}/>
 
-         </Switch>
-        </BrowserRouter>
+            </Switch>
+            </BrowserRouter>
+        </Provider>
     );
 }

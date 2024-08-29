@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate } from "react-router-dom"
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'flowbite/dist/flowbite.css'
+
 
 import reportWebVitals from './reportWebVitals';
 import { App } from './app/App';

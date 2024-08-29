@@ -11,11 +11,13 @@ import './Dashboard.css'
 
 // =============componentes
 import Ladding from '../../shared/componentes/Ladding/Ladding'
-import GenerosCarousel from '../../shared/componentes/GenerosCarousel/GenerosCarousel'
+
 import Populares from '../../shared/componentes/Populares/Populares'
 
 import Footer from '../../shared/componentes/Footer/Footer'
 import BtnPaginas from '../../shared/componentes/BtnPaginas/BtnPaginas'
+import NavBar from '../../shared/componentes/NavBar/NavBar'
+import GenerosCarousel from '../../shared/componentes/GenerosCarousel/GenerosCarousel'
 
 
 
@@ -33,6 +35,7 @@ export const Dashboard = () => {
 
                 <Ladding />
                 
+                <NavBar />
 
             <section className='conteudo-japao'>
                 <Populares />

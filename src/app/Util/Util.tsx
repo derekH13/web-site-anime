@@ -71,7 +71,7 @@ static async requisicaoGenero(tipo: string, genreToFilter: generos, num: number)
             );
       
             arrayResult = arrayResult.concat(filteredAnimes); // Corrigido a concatenação
-            console.log(arrayResult);
+            
             
 
           } catch (error) {
@@ -82,7 +82,7 @@ static async requisicaoGenero(tipo: string, genreToFilter: generos, num: number)
         // Filtrar e limitar os resultados
         const result = arrayResult.slice(0, num);
       
-        console.log(result);
+       
       
         return result; // Retornar os animes filtrados
       }
