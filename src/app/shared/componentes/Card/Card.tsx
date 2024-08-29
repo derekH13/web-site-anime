@@ -16,7 +16,7 @@ type paramCard = {
 function Card({ data }: paramCard) {
     // Definindo valores padrão
     const imageUrl = data?.images?.jpg?.image_url || 'https://cdn.myanimelist.net/images/anime/1130/120002.jpg';
-    const title = data?.title || 'Sem título';
+    const title = data?.title || 'Erro ao carregar: tente Novamente';
     const url = data?.url || '#';
 
     return (

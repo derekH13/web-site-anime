@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate} from "react-router-dom"
-import { Dashboard } from "../pages";
+import { Dashboard, Dorama } from "../pages";
 
 import '../../app/style.css'
 //config do react route dom padrão
@@ -11,7 +11,8 @@ export const Routes = () => {
          <Switch>
 
             {/* quando o navegador for pra rota '/pagina-inicial' vai para a pagina "Dashboard"  */}
-            <Route path="/pagina-inicial" element={<Dashboard />} /> 
+            <Route path="/pagina-inicial" element={<Dashboard />} />
+            <Route path="/pagina-Dorama" element={<Dorama />} />  
 
 
 

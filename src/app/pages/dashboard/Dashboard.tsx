@@ -13,8 +13,9 @@ import './Dashboard.css'
 import Ladding from '../../shared/componentes/Ladding/Ladding'
 import GenerosCarousel from '../../shared/componentes/GenerosCarousel/GenerosCarousel'
 import Populares from '../../shared/componentes/Populares/Populares'
-import Navegation from '../../shared/componentes/Navegation/Navegation'
+
 import Footer from '../../shared/componentes/Footer/Footer'
+import BtnPaginas from '../../shared/componentes/BtnPaginas/BtnPaginas'
 
 
 
@@ -29,20 +30,23 @@ export const Dashboard = () => {
             <div className='home'>
 
                 
-            <Navegation />
+
                 <Ladding />
                 
 
-                <section className='conteudo-japao'>
-                    <Populares />
+            <section className='conteudo-japao'>
+                <Populares />
 
-                <div className="coluna-conteudo">
-                    <GenerosCarousel genero={'Action'} />
-                    <GenerosCarousel genero={'Drama'} />
-                    <GenerosCarousel genero={'Action'} />
+            <div className="alinhar-center">
+                 <BtnPaginas />
+            </div>
+                    
 
-
-                </div>
+            <div className="coluna-conteudo">
+                <GenerosCarousel tipo={'anime'} genero={'Action'} />
+                <GenerosCarousel tipo={'anime'} genero={'Drama'} />
+                <GenerosCarousel tipo={'anime'} genero={'Action'} />
+            </div>
                    
                 <Footer />
                 </section>

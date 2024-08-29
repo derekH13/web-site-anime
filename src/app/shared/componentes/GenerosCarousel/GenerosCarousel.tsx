@@ -17,11 +17,12 @@ import { log } from 'console'
 // slick carousel
 
 type paramCaroucel = {
+    tipo: string
     genero: generos
 }
 
 
-function GenerosCarousel({genero}: paramCaroucel){
+function GenerosCarousel({tipo, genero}: paramCaroucel){
 
     //inicia o state com um objeto pronto
     const [dadosJapao, setDadosJapao] = useState<dadosBuscados[]>(objetoPopular)
@@ -29,7 +30,7 @@ function GenerosCarousel({genero}: paramCaroucel){
 
 //ccaregar a pagina ja faz a requisição dos generos
 useEffect(() => {
-    Util.requisicaoGenero(genero, 18).then((data) => {
+    Util.requisicaoGenero(tipo, genero, 18).then((data) => {
         
         setDadosJapao(data)
         carregou.current = true

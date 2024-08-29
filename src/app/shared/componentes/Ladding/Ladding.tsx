@@ -5,7 +5,7 @@ import './Ladding.css'
 
 function Ladding(){
     return(
-        <div>
+        <div className="alinhar-btnPaginas">
             <div className="ladding-conteudo">
                 <div className="fundo-ladding">
                     <img src="/assets/japao/ladding.png" alt="" />
@@ -21,17 +21,19 @@ function Ladding(){
                 <div className="container-texto">
                 <p>Mergulhe no universo vibrante da cultura japonesa e descubra uma vasta coleção de séries e animações que cativam e inspiram! <span className="descktop"> Venha explorar o mundo dos animes e mangas, onde histórias envolventes e visuais deslumbrantes se encontram para criar uma experiência única e inesquecível.</span> </p>
                 </div>
-                        
-                <div className="btn-play">
-                    <div className="girar">
-                        <img src="/assets/japao/Group.png" alt="" />
-                    </div>
-                    
-                    <div className="circulo">
 
-                        <img className="triangulo" src="/assets/japao/Polygon 1.png" alt="" />
+               <a href="https://myanimelist.net/" target="_blank">         
+                    <div className="btn-play">
+                    
+                        <div className="girar">
+                            <img src="/assets/japao/Group.png" alt="" />
+                        </div>
+                    
+                        <div className="circulo">
+                            <img className="triangulo" src="/assets/japao/Polygon 1.png" alt="" />
+                        </div>
                     </div>
-                </div>
+                </a>
 
 
                 <img className="vector-baixo" src="/assets/japao/Vector 5.png" alt="" />

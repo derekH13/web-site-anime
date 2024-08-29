@@ -50,14 +50,14 @@ static async requisicaoTop( genero: topJapao, num: number){
 }
 
 // Função para requisitar animes filtrados por gênero
-static async requisicaoGenero(genreToFilter: generos, num: number): Promise<dadosBuscados[]> {
+static async requisicaoGenero(tipo: string, genreToFilter: generos, num: number): Promise<dadosBuscados[]> {
         const page = 3;  // Número total de páginas a serem requisitadas
         const limit = 25;  // Número de resultados por página
         let arrayResult: dadosBuscados[] = []; // Array para armazenar resultados
       
         for (let i = 1; i <= page; i++) { // Corrigido o operador de comparação
           try {
-            const response = await fetch(`https://api.jikan.moe/v4/anime?page=${i}&limit=${limit}`);
+            const response = await fetch(`https://api.jikan.moe/v4/${tipo}?page=${i}&limit=${limit}`);
             
             if (!response.ok) {
               throw new Error('Network response was not ok');

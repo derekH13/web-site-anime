@@ -7,10 +7,10 @@ import './Populares.css';
 import { topJapao, dadosBuscados } from '../../../Interface/Interface';
 
 // objetosUtil
-import { objetoPopular } from '../../../data/objetosUtil';
+import { objetoP } from '../../../data/objetosUtil';
 
 function Populares() {
-    const [dadosTop, setDadosTop] = useState<dadosBuscados[]>(objetoPopular);
+    const [dadosTop, setDadosTop] = useState<dadosBuscados[]>(objetoP);
 
     useEffect(() => {
         Util.requisicaoTop('anime', 3).then((data) => {
