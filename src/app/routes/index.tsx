@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes as Switch, Navigate} from "react-router-dom"
-import { Cadastro, Dashboard, Dorama } from "../pages";
+import { Cadastro, Dashboard, Dorama, Pesquisa } from "../pages";
 
 import '../../app/style.css'
 import 'flowbite/dist/flowbite.css';
@@ -16,7 +16,8 @@ export const Routes = () => {
                 {/* quando o navegador for pra rota '/pagina-inicial' vai para a pagina "Dashboard"  */}
                 <Route path="/pagina-inicial" element={<Dashboard />} />
                 <Route path="/pagina-Dorama" element={<Dorama />} />  
-                <Route path="/pagina-Cadastro" element={<Cadastro />} />  
+                <Route path="/pagina-Cadastro" element={<Cadastro />} />
+                <Route path="/pagina-Pesquisa" element={<Pesquisa />} />   
 
 
 

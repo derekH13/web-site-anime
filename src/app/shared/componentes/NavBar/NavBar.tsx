@@ -28,7 +28,10 @@ const navegar = useNavigate()
       ></path>
     </svg>
   </button>
-  <button className="button">
+
+  <button 
+  onClick={() => navegar('/pagina-Pesquisa')}
+  className="button">
     <svg
       className="icon"
       stroke="currentColor"

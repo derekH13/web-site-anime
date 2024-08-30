@@ -12,6 +12,8 @@
     justify-content: space-around;
     gap: 2rem;
     padding-bottom: 2rem;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 span{
@@ -41,7 +43,18 @@ span{
     background-color: #00000093;
 }
 
+.color-arrow, .color-arrow2{
+height: 100px;
+width: 100px;
+}
 
+.color-arrow{
+    transform: translateX(-5rem);
+}
+
+.color-arrow2{
+    transform: translateX(11rem);
+}
 
 
 @media (max-width: 1500px) {
@@ -56,6 +69,20 @@ span{
 
 @media (max-width: 1200px) {
 
+    .color-arrow, .color-arrow2{
+        height: 50px;
+        width: 50px;
+        }
+
+    .color-arrow{
+        transform: translateX(0rem);
+        
+    }
+
+    .color-arrow2{
+        transform: translateX(0rem);
+        
+    }
     
     .container-carousel{
         margin: 0 auto;

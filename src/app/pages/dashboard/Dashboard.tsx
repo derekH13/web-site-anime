@@ -46,7 +46,7 @@ export const Dashboard = () => {
                     
 
             <div className="coluna-conteudo">
-                <GenerosCarousel tipo={'anime'} genero={'Action'} />
+                <GenerosCarousel tipo={'anime'} genero={'Sci-Fi'} />
                 <GenerosCarousel tipo={'anime'} genero={'Drama'} />
                 <GenerosCarousel tipo={'anime'} genero={'Action'} />
             </div>

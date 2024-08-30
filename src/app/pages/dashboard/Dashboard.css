@@ -5,9 +5,11 @@
     font-family: "Inter", sans-serif;
 }
 
-.conteudo-japao{
-    height: 120vh;
+.home{
+    overflow-x: hidden;
 }
+
+
 
 .coluna-conteudo{
     display: flex;

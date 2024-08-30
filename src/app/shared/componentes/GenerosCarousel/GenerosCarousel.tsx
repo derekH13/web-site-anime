@@ -35,7 +35,7 @@ function GenerosCarousel({tipo, genero}: paramCaroucel){
 //ccaregar a pagina ja faz a requisição dos generos
 
 useEffect(() => {
-    Util.requisicaoGenero(tipo, genero, 12).then((data) => {
+    Util.requisicaoGenero(tipo, genero, 13).then((data) => {
 
         setDadosJapao(data)
         carregou.current = true
@@ -77,15 +77,15 @@ useEffect(() => {
           <div className="carousel-item">
             <div className="carousel-cardHorizontal">
             
-                    <Card  data={dadosJapao[4]}/>
-                    <Card data={dadosJapao[5]}/>
+                    <Card  data={dadosJapao[6]}/>
+                    <Card data={dadosJapao[7]}/>
 
                     <span className="descktop">
-                        <Card data={dadosJapao[6]}/>
+                        <Card data={dadosJapao[4]}/>
                     </span>
         
                     <span className="descktop">
-                        <Card data={dadosJapao[7]}/>
+                        <Card data={dadosJapao[5]}/>
                     </span>
                 
                 </div>
@@ -94,7 +94,7 @@ useEffect(() => {
           <div className="carousel-item">
             
           <div className="carousel-cardHorizontal">
-                <Card  data={dadosJapao[8]}/>
+                <Card  data={dadosJapao[12]}/>
                 <Card data={dadosJapao[9]}/>
 
                 <span className="descktop">
@@ -110,11 +110,21 @@ useEffect(() => {
 
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target={`#carouselExample${carouselId}`} data-bs-slide="prev">
-          <span className="carousel-control-prev-icon next-color" aria-hidden="true"></span>
+          <span className=" next-color" aria-hidden="true">
+            <svg className=" color-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke=" red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 8-4 4 4 4"/>
+            </svg>
+
+          </span>
           <span className="visually-hidden"></span>
         </button>
         <button className="carousel-control-next" type="button" data-bs-target={`#carouselExample${carouselId}`} data-bs-slide="next">
-          <span className="carousel-control-next-icon " aria-hidden="true"></span>
+          <span className=" " aria-hidden="true">
+            <svg className=" color-arrow2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke=" red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 16 4-4-4-4"/>
+            </svg>
+
+          </span>
           <span className="visually-hidden next-color"></span>
         </button>
       </div>

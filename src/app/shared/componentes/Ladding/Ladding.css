@@ -60,6 +60,7 @@
     justify-content: center;
     align-items: center; 
     position: absolute;
+    pointer-events: none;
 }
 
 
@@ -68,6 +69,7 @@ max-width: 15rem;
 width: 50%;
 position: absolute;
 animation: girar 8s linear infinite;
+pointer-events: none;
 /* ============================== efeito de girar ============= */
 }
 
@@ -79,13 +81,14 @@ animation: girar 8s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 200;
 }
 
 .circulo img{
     height: 8rem;
     width: 6rem;
     margin-left: 1rem;
-    
+    pointer-events: none;
 }
 
 .garota-japao{

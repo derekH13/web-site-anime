@@ -40,7 +40,7 @@
 
   .conatiner-navBar{
     position: fixed;
-    right: 10px;
+    right: 20px;
     top: 38%;
     z-index: 9999;
     flex-direction: column;

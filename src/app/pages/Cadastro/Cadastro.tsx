@@ -4,6 +4,10 @@ import './Cadastro.css'
 import AppContext from '../../shared/contexts/AppContext';
 import Provider from '../../shared/contexts/Provider';
 
+
+import { motion } from 'framer-motion';
+
+
 export function Cadastro(){
     
     const loginRef = useRef<string>('')
@@ -60,7 +64,11 @@ export function Cadastro(){
                 <img className='mobille' src="/assets/japao/xxx.png" alt="" />
             </div>
 
-            <div className="container-cadastro">
+            <motion.div
+              initial={{x: 200, opacity: .5 }}
+              animate={{x: 0, opacity: 1 }}
+              transition={{duration: 1.1}}
+            className="container-cadastro">
                 <div className="formulario">
                         <h1 className='title-cadastro'>CADASTRO</h1>
 
@@ -86,7 +94,7 @@ export function Cadastro(){
 
                         <label htmlFor="senha">Senha:</label>
                         <input 
-                        placeholder='coloque uma senha ilustrativa'  
+                        placeholder='senha ilustrativa'  
                         type="password" id='senha' 
                         onChange={(e) => senhaRef.current = e.target.value}
                         />
@@ -94,7 +102,7 @@ export function Cadastro(){
                         
                         <label htmlFor="senhar">Repita a senha:</label>
                         <input 
-                        placeholder='coloque uma senha ilustrativa'  
+                        placeholder='senha ilustrativa'  
                         type="password" 
                         id='senhar' 
                         onChange={(e) => senharRef.current = e.target.value}
@@ -109,7 +117,7 @@ export function Cadastro(){
                 </div>
 
                 <img className='garota-cadastro' src="/assets/japao/garota.png" alt="" /> 
-            </div>
+            </motion.div>
 
         </div>
     )

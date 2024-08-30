@@ -23,14 +23,15 @@ import { objetoPopular } from "../data/objetosUtil"
 
 export class Util{
 
-//https://api.jikan.moe/v4/anime?q=naruto&sfw
 
 //requisição id do anime
-static async requisicao(){
-        const Response = await fetch(`https://api.jikan.moe/v4/anime/21`)
+static async requisicao(name: string){
+        const Response = await fetch(`https://api.jikan.moe/v4/anime?q=${name}&sfw`)
 
         const result = await Response.json()
+        const dados: dadosBuscados[] = result.data
 
+        return dados
 }
 
 

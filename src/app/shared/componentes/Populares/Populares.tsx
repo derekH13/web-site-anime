@@ -13,7 +13,7 @@ function Populares() {
     const [dadosTop, setDadosTop] = useState<dadosBuscados[]>(objetoP);
 
     useEffect(() => {
-        Util.requisicaoTop('anime', 3).then((data) => {
+        Util.requisicaoTop('anime', 4).then((data) => {
             setDadosTop(data);
         });
     }, []);

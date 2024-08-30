@@ -11,7 +11,7 @@ const navegar = useNavigate()
 <div className="flex items-center gap-2 pt-6 container-btnPagina">
 
   <button
-  onClick={() => navegar('/pagina-Anime')}
+  onClick={() => navegar('/pagina-Inicial')}
     className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[#F5F5F5] hover:text-[#06B6D4] h-9 rounded-md px-3"
   >
     <svg
@@ -37,6 +37,7 @@ const navegar = useNavigate()
     </svg>
     Anime
   </button>
+
   <button
   onClick={() => navegar('/pagina-Dorama')}
     className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[#F5F5F5] hover:text-[#60A5FA] h-9 rounded-md px-3"
@@ -63,50 +64,6 @@ const navegar = useNavigate()
     Manga
   </button>
 
-  <button
-    
-    className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[#F5F5F5] hover:text-[#FACC14] h-9 rounded-md px-3"
-  >
-    <svg
-      className="lucide lucide-sticky-note text-yellow-400 dark:text-yellow-600"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      stroke-width="2"
-      stroke="#FACC14"
-      fill="none"
-      viewBox="0 0 24 24"
-      height="22"
-      width="22"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z"
-      ></path>
-      <path d="M15 3v6h6"></path>
-    </svg>
-    Pessoas
-  </button>
-  <button
-    className="cursor-pointer bg-white relative inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[#F5F5F5] hover:text-[#FB923C] h-9 rounded-md px-3"
-  >
-    <svg
-      className="lucide lucide-star text-orange-400 dark:text-orange-600"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      stroke-width="2"
-      stroke="#FB923C"
-      fill="#FB923C"
-      viewBox="0 0 24 24"
-      height="22"
-      width="22"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <polygon
-        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-      ></polygon>
-    </svg>
-    Reviews
-  </button>
 </div>
 
 
