@@ -19,7 +19,7 @@ export function Pesquisa(){
     function buscar(e: FormEvent<HTMLFormElement>){
         e.preventDefault()
 
-        Util.requisicao(pesquisa).then((data) => {
+        Util.requisicao('anime', pesquisa, 20).then((data) => {
             setResultP(data)
 
             if(data.length < 1){
@@ -36,7 +36,7 @@ export function Pesquisa(){
 
     //pesquisa no inicio para aparecer cards
     useEffect(() => {
-        Util.requisicao(pesquisa).then((data) => {
+        Util.requisicao('anime',pesquisa, 20).then((data) => {
             setResultP(data)             
         }) 
     }, [])

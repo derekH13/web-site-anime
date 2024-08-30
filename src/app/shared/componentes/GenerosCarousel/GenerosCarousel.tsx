@@ -35,7 +35,7 @@ function GenerosCarousel({tipo, genero}: paramCaroucel){
 //ccaregar a pagina ja faz a requisição dos generos
 
 useEffect(() => {
-    Util.requisicaoGenero(tipo, genero, 13).then((data) => {
+    Util.requisicao(tipo ,genero, 13).then((data) => {
 
         setDadosJapao(data)
         carregou.current = true
